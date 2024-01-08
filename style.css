@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    float: left;
+    border: thin solid white;
+    color: white;
+    font-size: 2em;
+  }
+
+.subitem { border: thin solid black; }
+
+.submenu { display: none;}
+  
+.item:hover > .submenu {
+    position: absolute;
+    display: block;
+    width: auto;
+    color: black;
+    font-size: 0.55em;
+}
+
+#menu {
+    border: thin solid black;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+}
+  
+#menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.db {
+    position: absolute;
+    width: 30em;
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    height: 4.4em;
+    line-height: 100px;
+    font-size: 1.3em;
+    font-style: normal;
+    background-color: black;
+    left: 50%;
+    bottom: -2.2em;
+    color: white;
+}
+.description-banner {
+    font-family: 'Minecraft', sans-serif;
+    text-align: center;
+    line-height: 320px;
+    height: 7em;
+    left: 50%;
+    bottom: 0.9em;
+    font-style: italic;
+}
+
+.space {
+    height: 4.5em;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+  }
